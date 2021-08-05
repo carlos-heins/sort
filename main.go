@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	piece := createpiece(5)
+	piece := createpiece(200000)
 	quicksort(piece)
 
 	var stringval (string)
@@ -31,7 +31,7 @@ func createpiece(size int) []int {
 	var stringvalues (string)
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < size; i++ {
-		piece[i] = rand.Intn(100) - rand.Intn(100)
+		piece[i] = rand.Intn(200000) - rand.Intn(200000)
 		stringvalues += strconv.Itoa(piece[i])
 		stringvalues += " "
 	}
